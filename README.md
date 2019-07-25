@@ -1,6 +1,10 @@
 # CCxx
 about NDK
 
+---
+
+> windows linux unix 混编移植android NDK
+
 ## opencv
 
 ## ffmpeg
@@ -11,7 +15,3 @@ about NDK
 
 ## 自定义
 
-
----
-
-> windows linux unix 混编移植android NDK
