@@ -13,5 +13,5 @@ about NDK
 
 ## openwan
 
-## 自定义
+## native 加载 gif
 
