@@ -29,7 +29,8 @@ file(GLOB src_file *.cpp)
 add_library(
         native-lib
         SHARED
-        native-lib.cpp)
+        native-lib.cpp
+        ${src_file})
 
 #链接
 target_link_libraries(

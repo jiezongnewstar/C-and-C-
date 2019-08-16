@@ -1,5 +1,6 @@
 #include <jni.h>
 #include <string>
+#include "XBFFmpeg.h"
 
 extern "C"{
 #include "include/libavutil/avutil.h"
@@ -22,7 +23,11 @@ JNIEXPORT void JNICALL
 Java_com_xibei_xbffmpeg_XBPlayer_prepareNative(JNIEnv *env, jobject instance, jstring dataSource_) {
     const char *dataSource = env->GetStringUTFChars(dataSource_, 0);
 
-    // TODO
+    JavaCallHelper *javaCallHelper = new JavaCallHelper();
+    //创建调度
+    XBFFmpeg *xbfFmpeg = new XBFFmpeg(javaCallHelper, const_cast<char *>(dataSource));
+
+    xbfFmpeg->prepare();
 
     env->ReleaseStringUTFChars(dataSource_, dataSource);
 }

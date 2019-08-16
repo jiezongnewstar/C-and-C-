@@ -11,17 +11,14 @@ public class MainActivity extends AppCompatActivity {
 
     private XBPlayer player;
 
-    static {
-        System.loadLibrary("native-lib");
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        player = new XBPlayer();
-//        player.setDataSource(new File(Environment.getExternalStorageDirectory() + File.separator + "demo.mp4").getAbsolutePath());
+        player = new XBPlayer();
+        player.setDataSource(new File(Environment.getExternalStorageDirectory() + File.separator + "demo.mp4").getAbsolutePath());
 
 
         TextView tv = findViewById(R.id.sample_text);
@@ -32,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-//        player.prepare();
+        player.prepare();
     }
 
     public native String stringFromJNI();
