@@ -1,44 +1,41 @@
-# For more information about using CMake with Android Studio, read the
-# documentation: https://d.android.com/studio/projects/add-native-code.html
-
-# Sets the minimum version of CMake required to build the native library.
 
 cmake_minimum_required(VERSION 3.4.1)
 
-# Creates and names a library, sets it as either STATIC
-# or SHARED, and provides the relative paths to its source code.
-# You can define multiple libraries, and CMake builds them for you.
-# Gradle automatically packages shared libraries with your APK.
 
-add_library( # Sets the name of the library.
-             native-lib
+#导入头文件
+include_directories(include)
 
-             # Sets the library as a shared library.
-             SHARED
+#导入预编译库（静态库）
+#方案一  如果是动态库，则不建议这么操作，会涉及版本兼容问题
+#add_library(
+#        avcodec
+#        STATIC
+#        IMPORTED)
+#
+#set_target_properties(
+#        avcodec
+#        PROPERTIES
+#        IMPORTED_LOCATION
+#        {CMAKE_SOURCE_DIR}/libs/${CMAKE_ANDROID_ARCH_ABI}/libavcodec.a
+#)
 
-             # Provides a relative path to your source file(s).
-             native-lib.cpp )
+#方案二
 
-# Searches for a specified prebuilt library and stores the path as a
-# variable. Because CMake includes system libraries in the search path by
-# default, you only need to specify the name of the public NDK library
-# you want to add. CMake verifies that the library exists before
-# completing its build.
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -L${CMAKE_SOURCE_DIR}/libs/${CMAKE_ANDROID_ARCH_ABI}")
 
-find_library( # Sets the name of the path variable.
-              log-lib
+file(GLOB src_file *.cpp)
 
-              # Specifies the name of the NDK library that
-              # you want CMake to locate.
-              log )
 
-# Specifies libraries CMake should link to your target library. You
-# can link multiple libraries, such as libraries you define in this
-# build script, prebuilt third-party libraries, or system libraries.
+add_library(
+        native-lib
+        SHARED
+        native-lib.cpp)
 
-target_link_libraries( # Specifies the target library.
-                       native-lib
-
-                       # Links the target library to the log library
-                       # included in the NDK.
-                       ${log-lib} )
+#链接
+target_link_libraries(
+        native-lib
+        -Wl,--start-group   #忽略链接库顺序
+        avformat avcodec avfilter avutil swresample swscale
+        -Wl,--end-group
+        log
+        z)
