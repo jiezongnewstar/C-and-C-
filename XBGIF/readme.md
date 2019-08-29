@@ -26,9 +26,9 @@
 
     gif最多支持8位，及256色，前6个字节通常为“47 49 46 38 39 61” 或者 “47 49 46 37 61”对应的ASCII码为“GIF89a”或者“GIF87a”，表示GIF头（签名（前三位）+版本（后三位））
 
-    ![](http://baidu.com/pic/doge.png)
+    ![image](https://github.com/jiezongnewstar/CCxx/blob/master/XBGIF/gifdatasource.jpg)
 
-==
+
 
 
 
