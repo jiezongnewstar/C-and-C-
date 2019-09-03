@@ -3,38 +3,17 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.xibei.nativieloadgif"
+        applicationId "com.xibei.xb_bsdiff"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        externalNativeBuild {
-            cmake {
-//                abiFillters "armeabi-v7a"
-                cppFlags ""
-            }
-        }
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-//            ndk{
-//                abiFillters "armeabi-v7a"
-//            }
-        }
-
-        debug{
-            minifyEnabled false
-//            ndk{
-//                abiFillters "armeabi-v7a"
-//            }
-        }
-    }
-    externalNativeBuild {
-        cmake {
-            path "src/main/cpp/CMakeLists.txt"
         }
     }
 }

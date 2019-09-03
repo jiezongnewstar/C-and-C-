@@ -1,27 +1,13 @@
-package com.xibei.nativieloadgif;
+package com.xibei.xb_bsdiff;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-
-
-    private ImageView iv_gif;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        iv_gif = findViewById(R.id.iv_gif);
-
     }
-
-
-
-
 }

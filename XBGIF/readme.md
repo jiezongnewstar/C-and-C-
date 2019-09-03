@@ -24,3 +24,7 @@
     gif最多支持8位，及256色，前6个字节通常为“47 49 46 38 39 61” 或者 “47 49 46 37 61”对应的ASCII码为“GIF89a”或者“GIF87a”，表示GIF头（签名（前三位）+版本（后三位））
 
    ![Image gifdata](https://github.com/jiezongnewstar/CCxx/blob/master/XBGIF/gifdatasource.jpg)
+
+   上图表示的是头部后面的位数各自表示的部分，包括宽度、高度等等，对应的文档在上面的参考部分已经讲的很详细，如果有兴趣的可以进行研究（属实我是没什么兴趣去研究，会用就好了）。
+
+    我后悔了，列出这个标题，这部分不要去看我写的了，我想直接撸码，这种东西写好工具类就好了。。。Sorry，i am not a good writer.
