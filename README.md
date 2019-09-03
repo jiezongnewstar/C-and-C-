@@ -7,6 +7,8 @@ about NDK
 
 ## opencv
 
+## bsdiff
+
 ## ffmpeg
 
 ## opengl
