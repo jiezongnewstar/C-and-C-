@@ -1,0 +1,5 @@
+# ninja log v5
+1	61	0	CMakeFiles/native-lib.dir/gifalloc.c.o	c66912b68506c435
+0	120	0	CMakeFiles/native-lib.dir/dgif_lib.c.o	660ba5cd9314f407
+1	360	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	a87b6051a3b56712
+361	394	0	/Users/jiajie/Downloads/github/CCxx/XBGIF/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	c60b7e2ae5e4f3ef

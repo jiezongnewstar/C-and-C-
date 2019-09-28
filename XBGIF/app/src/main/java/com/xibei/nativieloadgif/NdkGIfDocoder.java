@@ -1,5 +1,7 @@
 package com.xibei.nativieloadgif;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by Xibei on 2019/8/29.
  * Github: https://github.com/jiezongnewstar
@@ -9,6 +11,8 @@ package com.xibei.nativieloadgif;
 public class NdkGIfDocoder {
 
     private long gifPointer;
+
+
 
     static {
         System.loadLibrary("native-lib");
@@ -25,6 +29,14 @@ public class NdkGIfDocoder {
         return ndkGIfDocoder;
     }
 
+
+    //加载gif文件
     private static native long loadGif(String path);
+
+    public static native int getWidth(long gifPointer);
+
+    public static native int getHeight(long gifPointer);
+
+    public static native int updateFrame(Bitmap bitmap,long gifPointer);
 
 }

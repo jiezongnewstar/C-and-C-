@@ -1,0 +1,72 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF",
+      "sdkFolder": "/Users/jiajie/Downloads/config/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/build/intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app",
+      "makeFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/src/main/cpp/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/.cxx",
+      "cxxFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx",
+      "ndkFolder": "/Users/jiajie/Downloads/config/sdk/ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "release",
+    "soFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/build/intermediates/cmake/release/lib",
+    "objFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/build/intermediates/cmake/release/obj",
+    "jsonFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cmake/release",
+    "gradleBuildOutputFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cxx/release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cmake/release/armeabi-v7a",
+  "jsonFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cmake/release/armeabi-v7a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cxx/release/armeabi-v7a",
+  "objFolder": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/build/intermediates/cmake/release/obj/armeabi-v7a",
+  "buildCommandFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cmake/release/armeabi-v7a/build_command.txt",
+  "buildOutputFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cmake/release/armeabi-v7a/build_output.txt",
+  "modelOutputFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cmake/release/armeabi-v7a/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cxx/release/armeabi-v7a/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cxx/release/armeabi-v7a/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cxx/release/armeabi-v7a/build_generation_state.json",
+    "cacheKeyFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cxx/release/armeabi-v7a/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cxx/release/armeabi-v7a/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cxx/release/armeabi-v7a/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cxx/release/armeabi-v7a/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cmake/release/armeabi-v7a/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/jiajie/Downloads/github/CCxx/XBGIF/app/.cxx/cmake/release/armeabi-v7a/compile_commands.json"
+}

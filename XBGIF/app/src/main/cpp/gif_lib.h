@@ -46,7 +46,7 @@ typedef struct ColorMapObject {
 typedef struct GifImageDesc {
     GifWord Left, Top, Width, Height;   /* Current image dimensions. */
     bool Interlace;                     /* Sequential/Interlaced lines. */
-    ColorMapObject *ColorMap;           /* The local color map */
+    ColorMapObject *ColorMap;        /* The local color map */
 } GifImageDesc;
 
 typedef struct ExtensionBlock {
@@ -60,8 +60,11 @@ typedef struct ExtensionBlock {
 #define APPLICATION_EXT_FUNC_CODE 0xff    /* application block */
 } ExtensionBlock;
 
+
+
 typedef struct SavedImage {
     GifImageDesc ImageDesc;
+
     GifByteType *RasterBits;         /* on malloc(3) heap */
     int ExtensionBlockCount;         /* Count of extensions before image */
     ExtensionBlock *ExtensionBlocks; /* Extensions before image */
